@@ -1,5 +1,9 @@
 # Init
 import os
+
+# Ensure 'data' directory exists
+os.makedirs('data', exist_ok=True)
+
 import re
 import signal
 import atexit
