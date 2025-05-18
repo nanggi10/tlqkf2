@@ -1,5 +1,6 @@
 from route.tool.func import *
-from flask import redirect, render_template, request, session, escape
+from flask import template, request, session
+from markupsafe import escape
 
 def login_register_email_2():
     with get_db_connect() as conn:
