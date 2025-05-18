@@ -281,7 +281,7 @@ class class_check_json:
                 normal_db_type = ['sqlite', 'mysql']
 
                 print('DB type (' + normal_db_type[0] + ') [' + ', '.join(normal_db_type) + '] : ', end = '')
-                data_get = str(input())
+                data_get = os.getenv("DATA_GET", "default_value")
                 if data_get == '' or not data_get in normal_db_type:
                     set_data['db_type'] = 'sqlite'
                 else:
