@@ -1,5 +1,5 @@
 from route.tool.func import *
-from flask import template, request, session
+from flask import render_template, request, session
 from markupsafe import escape
 
 def login_register_email_2():
